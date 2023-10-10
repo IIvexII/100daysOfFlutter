@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:role_dice/styled_text.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.colors});
@@ -16,8 +15,11 @@ class GradientContainer extends StatelessWidget {
           end: Alignment.topLeft,
         ),
       ),
-      child: const Center(
-        child: StyledText(data: "#100DaysOfFlutter"),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-6.png',
+          width: 200,
+        ),
       ),
     );
   }
