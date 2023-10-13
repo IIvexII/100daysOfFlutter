@@ -13,7 +13,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Hello"),
+      child: Text(
+        "Questions Here Soon",
+        style: TextStyle(color: Colors.white, fontSize: 20),
+      ),
     );
   }
 }
