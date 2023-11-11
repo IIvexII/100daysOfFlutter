@@ -10,8 +10,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Expenses(),
+    return MaterialApp(
+      theme: ThemeData(useMaterial3: true),
+      home: const Expenses(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
